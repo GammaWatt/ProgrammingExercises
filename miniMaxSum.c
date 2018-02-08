@@ -39,5 +39,6 @@ int main() {
        scanf("%i",&arr[arr_i]);
     }
     miniMaxSum(5, arr);
+    free(arr)
     return 0;
 }
