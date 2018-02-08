@@ -30,6 +30,7 @@ void miniMaxSum(int arr_size, int* arr) {
     }
     // max_sum = sum - min; maximum sum possible of 4 digits in array
     // min_sum = sum - max; minimum sum possible of 4 digits in array
+    // Thank you, associative property of arithmetic!
     printf("%lld %lld", sum - max, sum - min);
 }
 
