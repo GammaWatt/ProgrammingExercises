@@ -7,6 +7,17 @@
 #include <limits.h>
 #include <stdbool.h>
 
+/*
+Comparing points give to two people in sets of 3. 3 points to alice, 3 points to bob. Points = {p,p,p}.
+If alice[n] > bob[n] then bob gets 1 point incremented to them and visa versa.
+If alice[n] == bob[n], then neither get a point increment.
+input looks like this:
+program running...
+{alice} > 1, 2, 3
+{bob}  > 3, 2, 1
+{output} > 1 1
+*/
+
 void check(int ax, int bx, int* a, int* b){
     if (ax > bx) {
         *a = *a + 1;
